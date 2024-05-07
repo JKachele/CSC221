@@ -1,5 +1,4 @@
-import math
-
+# Get inputs
 price1 = float(input())
 width1 = int(input())
 length1 = int(input())
@@ -11,22 +10,22 @@ length2 = int(input())
 price3 = float(input())
 width3 = int(input())
 length3 = int(input())
+print()
 
 # Step 1
 print("Order #1")
 area1 = width1 * length1
-carpet1 = (area1 * 1.2) * price1
-
+carpet1 = (area1 * 1.2) * price1  # Calculate proce of carpet with 20% extra area
 print("Room:", area1, "sq ft")
 print("Carpet: $%.2f" % carpet1)
 
 # Step 2
-labor1 = area1 * 0.75
+labor1 = area1 * 0.75   # Labor is $0.75 per area
 print("Labor: $%.2f" % labor1)
 
 # Step 3
 subTotal1 = carpet1 + labor1
-tax1 = subTotal1 * 0.07
+tax1 = subTotal1 * 0.07 # Tax is 7% which is 0.07
 total1 = subTotal1 + tax1
 print("Tax: $%.2f" % tax1)
 print("Cost: $%.2f" % total1)
